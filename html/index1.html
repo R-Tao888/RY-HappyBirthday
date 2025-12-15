@@ -42,7 +42,17 @@
 </div>
 
   <script src="../js/indexl.js"></script>
-  <audio src="../music/1.mp3" autoplay="autoplay">
+
+  <audio id="bg-music" src="../music/1.mp3" autoplay="autoplay">
+  <script>
+		// 点击页面任意位置播放音乐（应对浏览器限制）
+        document.addEventListener('click', function() {
+            const bgMusic = document.getElementById('bg-music');
+            bgMusic.play().catch(e => {
+                console.log('播放被阻止:', e);
+            });
+        }, { once: true });
+	</script>
 </body>
 
 </html>
