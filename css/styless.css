@@ -434,20 +434,28 @@ body {
 	}
 }
 
-.button-style1 ,.button-style2{
+.button-style1{
 	position:absolute;
 	top:70%;
 	opacity:1;
 	z-index:100;
 }
+
+.button-style2{
+	position:absolute;
+	top:2%;
+	opacity:1;
+	z-index:100;
+}
+
 .button-style1 {
 	position:absolute;
-	left:25%;
+	left:43.5%;
 	animation:btn1 15s;
 }
 .button-style2 {
 	position:absolute;
-	right:25.5%;
+	right:2%;
 	animation:btn2 15s;
 }
 @keyframes btn1 {
@@ -457,11 +465,11 @@ body {
 	}
 	70% {
 		opacity:0;
-		left:15.5%;
+		left:25.5%;
 	}
 	100% {
 		opacity:1;
-		left:25.5%;
+		left:43.5%;
 	}
 }
 @-webkit-keyframes btn1 {
@@ -471,11 +479,11 @@ body {
 	}
 	70% {
 		opacity:0;
-		left:15.5%;
+		left:25.5%;
 	}
 	100% {
 		opacity:1;
-		left:25.5%;
+		left:43.5%;
 	}
 }
 @keyframes btn2 {
@@ -512,7 +520,7 @@ body {
 	color:#fff;
 	transition:all 0.5s;
 }
-.link1,.link2 {
+.link1 {
 	width:170px;
 	height:60px;
 	border:2px solid #fff;
@@ -523,6 +531,20 @@ body {
 	background: #4169E1;
 	transition:all 0.8s;
 }
+
+.link2 {
+	width:80px;
+	height:30px;
+	border:2px solid #ffffff;
+	border-radius:30px;
+	font-size: 13px;
+  line-height: 15px;
+	text-align:center;
+  text-decoration: none;
+	background: #4169E1;
+	transition:all 0.8s;
+}
+
 /* .link2 {
 	cursor:not-allowed;
 } 鼠标悬停样式设置为“禁止”光标*/
@@ -530,6 +552,10 @@ body {
 	position:relative;
 	top:22%;
 	vertical-align:middle;
+}
+
+.bt1 {
+  color: #fff;
 }
 
 /* a.lk1:hover {
